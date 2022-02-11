@@ -1,0 +1,125 @@
+body,
+html {
+    margin: 0;
+    background-color: #ffffff;
+}
+#title {
+    position: relative;
+
+    margin-top: 0;
+    background-color: #002966;
+    color: white;
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    font-size: 2rem;
+}
+.flex-container-fake {
+    border: 1px solid #0096ff;
+    width: 70vw;
+    height: 30vh;
+    margin: 0 auto;
+    /* important */
+    display: block;
+}
+
+.flex-item-fake {
+    color: #0096ff;
+    border: 1px solid #0096ff;
+    margin: 5% 5%;
+    padding: 2px;
+}
+
+.flex-container {
+    border: 1px solid #0096ff;
+    width: 70vw;
+    height: 30vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flexbox-direction {
+    flex-flow: row wrap;
+}
+
+.flexbox-wrap,
+.flexbox-content {
+    flex-wrap: wrap;
+}
+
+.flexbox-grow div {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    background-color: lightgrey;
+    box-sizing: border-box;
+    border: 0.5px solid grey;
+}
+
+.flex-item {
+    color: #0096ff;
+    border: 1px solid #0096ff;
+    margin: 0 4%;
+    width: 10%;
+    text-align: center;
+    padding: 1px;
+}
+
+.btn-wrapper {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    height: 20%;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: #002966;
+    color: white;
+    cursor: pointer;
+}
+
+.code {
+    background-color: lightgrey;
+    border-radius: 5px;
+    height: 20%;
+    padding: 10px;
+}
+
+#code-flex {
+    color: red;
+}
+
+#code-direction,
+#code-wrap,
+#code-content {
+    color: blue;
+}
+
+.select {
+    max-width: 60%;
+    font-family: "Courier New", Courier, monospace;
+}
+
+option {
+    font-family: "Courier New", Courier, monospace;
+}
+
+.container-img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-img img,
+.container-img p {
+    margin: 0 auto;
+}

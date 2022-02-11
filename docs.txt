@@ -1,0 +1,34 @@
+parent
+	- display: [value]
+		- parent
+		- child
+	- flex-direction: [value]
+		direzione dell'allineamento
+		- row
+		- row-reverse
+		- column
+		- column-reverse
+	- flex-wrap: [value]
+		flessibilità: gli elementi sono disposti su una sola riga o su più righe
+		- wrap
+		- nowrap
+	- flex-flow: [value1] [value2]
+		combinazione tra flex-direction e flex-wrap
+	- justify-content: [value]
+		- flex-start
+		- flex-end
+		- center
+		- space-between
+		- space-around
+	- gap: [value: Number]
+		- gap
+		- row-gap
+		- column-gap
+
+child
+	- flex-grow: [value: Number]
+	- flex-shrink: [value: Number]
+	- flex-basis: [value: Number]
+	- flex: [value1: Number] [value2: Number] [value3: Number]
+		combinazione tra flex-grow flex-shrink flex-basis
+	

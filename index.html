@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap"
+            rel="stylesheet"
+        />
+        <!-- <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        /> -->
+
+        <title>Prova flex</title>
+    </head>
+    <body>
+        <h1 id="title">Flexible Box Layout Module</h1>
+        <section>
+            <div class="description">
+                <p><b>Differenza tra blocco e flexbox</b></p>
+            </div>
+            <div class="flex-container-fake">
+                <div class="flex-item-fake">item1</div>
+                <div class="flex-item-fake">item2</div>
+                <div class="flex-item-fake">item3</div>
+            </div>
+            <div class="btn-wrapper">
+                <p id="btn1" class="btn">Click to see flex</p>
+                <code class="code"
+                    >display: <span id="code-flex">block</span></code
+                >
+            </div>
+            <div class="description">
+                <p><b>flex-direction</b></p>
+            </div>
+
+            <div class="flex-container flexbox-direction">
+                <div class="flex-item">item1</div>
+                <div class="flex-item">item2</div>
+                <div class="flex-item">item3</div>
+                <div class="flex-item">item4</div>
+                <div class="flex-item">item5</div>
+            </div>
+            <div class="btn-wrapper">
+                <select class="select" id="direction">
+                    <option selected>Open this select menu</option>
+                    <option value="row">row</option>
+                    <option value="row-reverse">row-reverse</option>
+                    <option value="column">column</option>
+                    <option value="column-reverse">column-reverse</option>
+                </select>
+                <p id="btn2" class="btn">flex-direction</p>
+                <code class="code"
+                    >flex-direction: <span id="code-direction">row</span></code
+                >
+            </div>
+            <div class="description">
+                <p><b>flex-wrap</b></p>
+            </div>
+
+            <div class="flex-container flexbox-wrap">
+                <div class="flex-item">item1</div>
+                <div class="flex-item">item2</div>
+                <div class="flex-item">item3</div>
+                <div class="flex-item">item4</div>
+                <div class="flex-item">item5</div>
+                <div class="flex-item">item6</div>
+                <div class="flex-item">item7</div>
+                <div class="flex-item">item8</div>
+                <div class="flex-item">item9</div>
+                <div class="flex-item">item10</div>
+            </div>
+            <div class="btn-wrapper">
+                <select class="select" id="wrap">
+                    <option selected>Open this select menu</option>
+                    <option value="wrap">wrap</option>
+                    <option value="wrap-reverse">wrap-reverse</option>
+                    <option value="nowrap">nowrap</option>
+                </select>
+                <p id="btn3" class="btn">flex-wrap</p>
+                <code class="code"
+                    >flex-wrap: <span id="code-wrap">wrap</span></code
+                >
+            </div>
+            <div class="description">
+                <p><b>flex-flow</b></p>
+                <p>flex-flow: [flex-direction] [flex-wrap];</p>
+            </div>
+            <div class="description">
+                <p><b>justify-content</b></p>
+            </div>
+
+            <div class="flex-container flexbox-content">
+                <div class="flex-item">item1</div>
+                <div class="flex-item">item2</div>
+                <div class="flex-item">item3</div>
+            </div>
+            <div class="btn-wrapper">
+                <select class="select" id="content">
+                    <option selected>Open this select menu</option>
+                    <option value="flex-start">flex-start</option>
+                    <option value="flex-end">flex-end</option>
+                    <option value="center">center</option>
+                    <option value="space-between">space-between</option>
+                    <option value="space-around">space-around</option>
+                </select>
+                <p id="btn4" class="btn">justify-content</p>
+                <code class="code"
+                    >justify-content:
+                    <span id="code-content">center</span></code
+                >
+            </div>
+
+            <div class="description">
+                <p><b>gap</b></p>
+            </div>
+            <div class="container-img">
+                <img
+                    src="imgs/css-gap.jpg"
+                    alt="example flexbox row gap and column gap"
+                />
+                <p class="description">gap: [row-gap] [column-gap];</p>
+            </div>
+        </section>
+        <section>
+            <div class="description">
+                <p><b>flex-grow</b></p>
+            </div>
+
+            <div class="flex-container flexbox-grow">
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+            </div>
+            <div class="btn-wrapper">
+                <p id="btn5" class="btn">flex-grow</p>
+                <code class="code"
+                    >(<b>apply to chldren</b>)flex-grow:
+                    <span id="code-grow"></span
+                ></code>
+            </div>
+        </section>
+        <script src="main.js"></script>
+    </body>
+</html>
