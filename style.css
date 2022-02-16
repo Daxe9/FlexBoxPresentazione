@@ -100,7 +100,8 @@ html {
 
 #code-direction,
 #code-wrap,
-#code-content {
+#code-content,
+#code-grow {
     color: blue;
 }
 
