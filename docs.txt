@@ -15,11 +15,14 @@ parent
 	- flex-flow: [value1] [value2]
 		combinazione tra flex-direction e flex-wrap
 	- justify-content: [value]
+		disposizione dei flex item in linea orizzontale
 		- flex-start
 		- flex-end
 		- center
 		- space-between
 		- space-around
+	- align-content
+		disposizione dei flex item in linea verticale
 	- gap: [value: Number]
 		- gap
 		- row-gap
