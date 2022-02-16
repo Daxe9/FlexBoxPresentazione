@@ -12,11 +12,17 @@ html {
     text-align: center;
 }
 
+.number {
+    color: red;
+    font-size: large;
+}
+
 .description {
     text-align: center;
     font-family: "Roboto Mono", monospace;
     font-size: 2rem;
 }
+
 .flex-container-fake {
     border: 1px solid #0096ff;
     width: 70vw;
@@ -29,7 +35,9 @@ html {
 .flex-item-fake {
     color: #0096ff;
     border: 1px solid #0096ff;
-    margin: 5% 5%;
+    margin: 0 5%;
+    margin-bottom: 5%;
+    margin-top: 2%;
     padding: 2px;
 }
 
